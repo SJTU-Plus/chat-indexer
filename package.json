@@ -8,8 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/sanitize-html": "^1.23.3",
     "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
+    "sanitize-html": "^1.27.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",

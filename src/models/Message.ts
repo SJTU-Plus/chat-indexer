@@ -19,21 +19,22 @@ export function generateChatData(start: number, end: number) {
         i += 1
     })
 
-    return x;
+    return x
 }
 
 export function searchChatData(val: string) {
-    const x: Message[] = []
+    let x: Message[] = []
     let i = 0
     let cnt = 0
     const allMessage = messages as Array<any>
     allMessage.forEach((item: any) => {
-        if (item["msg"].search(val) != -1 && cnt < 200) {
+        if (item["msg"].search(val) != -1 || item["name"].search(val) != -1) {
             x.push({ id: i.toString(), name: item["name"], msg: item["msg"], time: item["time"] })
             cnt += 1
         }
         i += 1
     })
-
-    return x;
+    x.reverse()
+    x = x.slice(0, 500)
+    return x
 }
