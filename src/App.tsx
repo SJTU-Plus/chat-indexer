@@ -1,7 +1,6 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
-import { Button, Intent, Spinner } from "@blueprintjs/core";
 import { DatePicker } from "@blueprintjs/datetime";
 
 function App() {
@@ -16,8 +15,8 @@ function App() {
                 highlightCurrentDay={true}
                 shortcuts={true}
                 showActionsBar={true}
-              // onChange={(newDate) => this.handleChange(newDate)}
-              // value={this.state.selectedDate}
+                // onChange={(newDate) => this.handleChange(newDate)}
+                // value={this.state.selectedDate}
               />
             </div>
           </div>
@@ -34,18 +33,19 @@ function App() {
             <div className="col my-3">
               <p>
                 共 0 条记录
-              <br />
-                <small className="text-muted">全文搜索仅展示最新的 500 条记录</small>
+                <br />
+                <small className="text-muted">
+                  全文搜索仅展示最新的 500 条记录
+                </small>
               </p>
             </div>
           </div>
         </div>
         <div className="col-auto h-100">
-          <div className="h-100 overflow-auto">
-          </div>
+          <div className="h-100 overflow-auto"></div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
